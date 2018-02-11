@@ -695,10 +695,13 @@ Block. Element, Modifier
 @media (min-width: 1010px) {
 
 .page-section--testimonials {
-			background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-			background-size: cover
+			/* selector */
 
 	}
+			.page-section--testimonials.lazyloaded {
+				background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+				background-size: cover;
+			}
 	}
 
 .headline {
